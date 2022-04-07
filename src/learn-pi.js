@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom'
 
-function App() {
+function LearnPi() {
   const activeNavLink = ({ isActive }) => (isActive ? 'underline' : undefined)
 
   return (
@@ -18,4 +18,4 @@ function App() {
   )
 }
 
-export default App
+export default LearnPi
