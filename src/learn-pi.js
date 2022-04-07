@@ -1,7 +1,10 @@
-import { NavLink, Outlet } from 'react-router-dom'
+import { Navigate, NavLink, Outlet, useLocation } from 'react-router-dom'
 
 function LearnPi() {
   const activeNavLink = ({ isActive }) => (isActive ? 'underline' : undefined)
+  const { pathname } = useLocation()
+
+  if (pathname === '/') return <Navigate to="/learn" />
 
   return (
     <div className="md:max-w-lg max-w-md mx-auto">
