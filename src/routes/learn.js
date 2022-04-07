@@ -86,24 +86,15 @@ function Learn() {
           {getPair(pair + 2)}
         </div>
       </div>
-      <div className="flex flex-row justify-around mt-5">
-        <div
-          onClick={restart}
-          className="p-2 bg-gray-400 rounded-sm cursor-pointer"
-        >
-          <img src="./play.png" alt="Play" height={40} width={40} />
+      <div className="flex flex-row justify-around mt-10 text-5xl">
+        <div onClick={restore} className="p-2 cursor-pointer">
+          ⏪
         </div>
-        <div
-          onClick={save}
-          className="p-2 bg-gray-400 rounded-sm cursor-pointer"
-        >
-          <img src="./save.png" alt="Play" height={40} width={40} />
+        <div onClick={restart} className="p-2 cursor-pointer">
+          ▶️
         </div>
-        <div
-          onClick={restore}
-          className="p-2 bg-gray-400 rounded-sm cursor-pointer"
-        >
-          <img src="./time.png" alt="Play" height={40} width={40} />
+        <div onClick={save} className="p-2 cursor-pointer">
+          📍
         </div>
       </div>
     </div>
